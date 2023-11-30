@@ -29,6 +29,7 @@ section
     width: 100%
     padding: 0px
     margin: 0px
+    overflow: hidden
     
    
 header 
@@ -119,6 +120,7 @@ header
         padding: 15px
         color: white
         text-decoration: none
+        margin-top: 10px
     >
         a
             width: 10%
@@ -159,6 +161,7 @@ header
             max-width: 200px
             height: auto
             object-fit: contain 
+            border-radius: 25px
             
         .column
             background: none
@@ -205,7 +208,6 @@ header
         .portfolio-texte
             background: $glass
             padding: 20px 15px
-            width: 50%
             border-radius: 10px
             border: 1px solid $black
             border-bottom: none
@@ -454,8 +456,9 @@ footer
     #apropos
         width: 90%
         margin: auto
-        a
+        button, a
             width: auto
+            padding: 12px
         .container
             flex-direction: column
             margin: 0px
@@ -477,9 +480,9 @@ footer
                 gap: 0px
             .skills
                 display: inline
-                button  
-                    margin: 0px
-                    width: auto
+                button
+                    &:last-child
+                        margin-top: 10px
             .profil
                 max-height: 300px
                 flex-direction: row
