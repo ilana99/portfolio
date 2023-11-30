@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Syne:wght@600;800&display=swap"
+    rel="stylesheet">
+  <script type="module" src="script.js"></script>
+  <title>Ilana G</title>
+</head>
+
+<body>
+  <header>
+    <h1>Ilana G</h1>
+    <nav>
+      <a href="#apropos">A propos</a>
+      <a href="#portfolio">Projets</a>
+      <a href="#contact">Contact</a>
+      <!-- <button> <span class="material-symbols-rounded">
+        routine
+        </span></button> -->
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div id="herocontainer">
+      <div id="hero3D"></div>
+      <p>Je suis une graphiste et développeuse web basée à Lyon.</p>
+    </div>
+
+    <div id="bouton">
+      <a href="#apropos">Voir plus <span class="material-symbols-rounded">
+          expand_more
+        </span></i> </a>
+    </div>
+
+  </section>
+
+  <section id="apropos">
+
+    <!-- <h2>À propos</h2> -->
+    <div class="container">
+      <div class="column left">
+        <div class="profil">
+          <img src="/public/photo.png">
+          <div class="profiltexte">
+            <h3>Ilana G</h3>
+            <p>Développeuse et graphiste</p>
+            <a href="#contact">Me contacter</a>
+          </div>
+          
+        </div>
+
+        <div class="skills">
+          <h3>Skills</h3>
+          <button>HTML/CSS</button>
+          <button>Javascript</button>
+          <button>React</button>
+          <button>Suite Adobe</button>
+        </div>
+      </div>
+
+      <div class="column right">
+        <div class="formation">
+          <h3>Mes formations</h3>
+          <div class="columncontainer">
+            <div>
+              <h4>Titre professionel de concepteur designer UI/UX</h4>
+              <p>Instic, Lyon</p>
+              <p>2021-2022</p>
+              <p>Suite Adobe, HTML/CSS/Bootstrap, Motion Design, Stratégie de communication</p>
+              <p>Wordpress (Elementor, Filezilla)</p>
+            </div>
+            <div>
+              <h4>Titre professionnel d'intégrateur web</h4>
+              <p>OpenClassroom</p>
+              <p>2023</p>
+              <p>Intégration de sites web en HTML/CSS/Javascript, utilisation de React et Redux</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experiences">
+          <h3>Mes expériences</h3>
+          <div class="columncontainer">
+            <div>
+              <h4>Graphiste & intégratrice</h4>
+              <p>The Kungfu Company</p>
+              <p>2022 (stage - 2 mois)</p>
+              <p>Création d’identités de marque, création des produits, création des étiquettes</p>
+              <p>Mise en place des sites web (choix de l’hébergeur, achat des noms de domaines), design et création des sites e-commerce sur Wordpress (Woocommerce, Elementor pro)</p>
+            </div>
+            <div>
+              <h4>Etsy</h4>
+              <p>2021 - ?</p>
+              <p>Vente en ligne de produits</p>
+            </div>
+          </div>
+          </div>
+      </div>
+
+    </div>
+
+    <a href="#" target="_blank">Voir mon CV</a>
+
+  </section>
+
+  <section id="portfolio">
+    <div class="portfolio-section" id="graphisme">
+      <div class="portfolio-texte">
+        <h2>Graphisme</h2>
+        <!-- <p>De 2021 à 2022, j’ai suivi une formation d’UI/UX designer à l’INSTIC, pour avoir un titre professionnel de
+          niveau 6 (bac+3).</p> -->
+      </div>
+    </div>
+
+    <div class="portfolio-section" id="dev">
+      <div class="portfolio-texte">
+        <h2>Développement</h2>
+        <!-- <p>En 2023, j’ai suivi une formation d’Intégratrice Web avec Open Classroom, me donnant un titre professionel de
+          niveau 5 (bac+2). </p> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contactez-moi</h2>
+      <form>
+        <div class="colonnes">
+          <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="Nom" required>
+          </div>
+          <div>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+          </div>
+          <div>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" placeholder="E-mail" required>
+          </div>
+          <button id="buttonEnvoyer1">Envoyer</button>
+        </div>
+        <div class="colonnes">
+          <label for="message">Message</label>
+          <input type="text" name="message" placeholder="Message" id="message" required>
+          <button id="buttonEnvoyer2">Envoyer</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+  <div class="pattern"></div>
+  <footer>
+    <h3>Ilana G - 2023</h3>
+    <a>Mentions légales</a>
+  </footer>
+  <script type="module" src="/3D1.js"></script>
+</body>
+
+</html>

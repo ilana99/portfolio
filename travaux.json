@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Nina Carducci",
+        "id" : "1",
+        "category": "Développement",
+        "clientName": "Projet Fictif",
+        "link" : "",
+        "cover": "./public/ninacarducci.png",
+        "iframe": "https://ilana99.github.io/ninacarducci/",
+        "tagline" : "Intégration du site web",
+        "description": "Le client, une photographe, voulait ajouter des fonctionnalités au site existant.",
+        "tags": [
+            "HTML/CSS",
+            "Javascript",
+            "Test",
+            "Test",
+            "Test",
+            "Test"
+        ]
+    },
+    {
+        "title": "Booki",
+        "id": "4",
+        "category": "Développement",
+        "clientName": "Projet Fictif",
+        "link" : "https://github.com/ilana99/Booki",
+        "cover": "./public/booki.png",
+        "iframe": "https://ilana99.github.io/Booki/",
+        "tagline" : "Intégration du site web",
+        "description": "L’entreprise souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "tags": [
+            "HTML/CSS"
+        ]
+    },
+    {
+        "title": "Test1",
+        "id": "5",
+        "category": "Graphisme",
+        "clientName": "Test",
+        "link" : "https://github.com/ilana99/Booki",
+        "cover": "./public/background.png",
+        "iframe": "Test1",
+        "tagline" : "Lorem ipsum dolor sit amet",
+        "description": "Test1",
+        "tags": [
+            "React",
+            "Javascript"
+        ]
+    },
+    {
+        "title": "Test",
+        "id": "6",
+        "category": "Graphisme",
+        "clientName": "Test",
+        "link" : "https://github.com/ilana99/Booki",
+        "cover": "./public/background.png",
+        "iframe": "Test",
+        "tagline" : "Lorem ipsum dolor sit amet",
+        "description": "Test",
+        "tags": [
+            "React",
+            "Javascript"
+        ]
+    }
+]
