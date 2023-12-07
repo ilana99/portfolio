@@ -1,21 +1,19 @@
 [
     {
-        "title": "Nina Carducci",
+        "title": "Kasa",
         "id" : "1",
         "category": "Développement",
         "clientName": "Projet Fictif",
-        "link" : "",
-        "cover": "./public/ninacarducci.png",
-        "iframe": "https://ilana99.github.io/ninacarducci/",
+        "link" : "https://github.com/ilana99/kasa",
+        "cover": "./public/kasa.png",
+        "iframe": "https://ilana99.github.io/kasa",
         "tagline" : "Intégration du site web",
-        "description": "Le client, une photographe, voulait ajouter des fonctionnalités au site existant.",
+        "description": "Le site est un site de location immobilière. Intégration du site  en HTML, Sass et React à partir des maquettes. Création du site en desktop first, puis création des medias queries pour le responsive. Création d'animation CSS et utilsation de React Router. Gestion des données via un fichier JSON. ",
         "tags": [
             "HTML/CSS",
             "Javascript",
-            "Test",
-            "Test",
-            "Test",
-            "Test"
+            "React",
+            "Sass"
         ]
     },
     {
@@ -27,7 +25,7 @@
         "cover": "./public/booki.png",
         "iframe": "https://ilana99.github.io/Booki/",
         "tagline" : "Intégration du site web",
-        "description": "L’entreprise souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+        "description": "L’entreprise souhaitait développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Intégration à partir de maquettes, en HTML/CSS. Création du site en desktop first, puis création des medias queries pour le responsive.",
         "tags": [
             "HTML/CSS"
         ]
