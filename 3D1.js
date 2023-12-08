@@ -9,7 +9,7 @@ renderer.setSize( container.clientWidth, container.clientHeight );
 container.appendChild( renderer.domElement );
 
 renderer.shadowMap.enabled = true;
-renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Choose the shadow type you prefer
+renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 
 window.addEventListener('resize', () => {
   const newWidth = container.clientWidth;
@@ -18,6 +18,20 @@ window.addEventListener('resize', () => {
   // Update the camera's aspect ratio and renderer's size
   camera.aspect = newWidth / newHeight;
   camera.updateProjectionMatrix();
+
+  if (newWidth < 400) {
+    camera.position.z = 150;
+    camera.position.x = 5;
+  } else {
+    camera.position.z = 100;
+  }
+
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 600) {
+    camera.position.x = 5;
+    console.log(camera.position.x)
+  }
+
   renderer.setSize(newWidth, newHeight);
 });
 
@@ -71,6 +85,9 @@ const cubeMap2 = new THREE.CubeTextureLoader()
   'nz.png'
 ]);
 
+const group = new THREE.Group();
+
+
 const geometry = new THREE.TorusGeometry( 10, 3, 16, 100 ); 
 const material = new THREE.MeshPhysicalMaterial( { 
     reflectivity: 1,
@@ -81,10 +98,10 @@ const material = new THREE.MeshPhysicalMaterial( {
     envMapIntensity: 1,
  } ); 
 const torus = new THREE.Mesh( geometry, material ); 
-scene.add(torus)
 torus.castShadow = true;
 torus.position.z += 10;
 torus.position.y += 10;
+group.add(torus)
 
 const geometryCube = new THREE.BoxGeometry( 15, 15, 15 ); 
 const materialCube = new THREE.MeshStandardMaterial( {
@@ -96,11 +113,13 @@ const materialCube = new THREE.MeshStandardMaterial( {
   envMapIntensity: 2,
 } ); 
 const cube = new THREE.Mesh( geometryCube, materialCube ); 
-scene.add( cube );
 cube.castShadow = true;
 cube.position.x += 20 ;
 cube.position.z -= 15 ;
 cube.position.y -= 5 ;
+group.add( cube );
+
+scene.add(group);
 
 const planeGeometry = new THREE.PlaneGeometry( 100, 100, 112, 112 );
 const planeMaterial = new THREE.ShadowMaterial( { 
@@ -111,7 +130,6 @@ plane.receiveShadow = true;
 plane.rotation.x = 0;
 plane.position.z -= 30; 
 scene.add( plane );
-
 
 
 function animate() {
