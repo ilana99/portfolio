@@ -63,7 +63,7 @@ directionalLight.shadow.camera.bottom = -50; // Adjust as needed
 
 
 const cubeMap = new THREE.CubeTextureLoader()
-  .setPath('/cubemap/')
+  .setPath('./cubemap/')
   .load([
     'px.png',
     'nx.png',
@@ -75,7 +75,7 @@ const cubeMap = new THREE.CubeTextureLoader()
 
 
 const cubeMap2 = new THREE.CubeTextureLoader()
-.setPath('/cubemap2/')
+.setPath('./cubemap2/')
 .load([
   'px.png',
   'nx.png',
