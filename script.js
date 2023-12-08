@@ -4,7 +4,7 @@ const devSection = document.getElementById('dev')
 const portfolioSection = document.querySelectorAll('.portfolio-section')
 
 let jsonData;
-const json = './travaux.json'
+const json = './public/travaux.json'
 function fetchJson() {
     fetch(json)
         .then(response => {
